@@ -1,0 +1,47 @@
+﻿.divflex{
+    display: flex;
+    flex-direction:column;
+
+}
+.texto {
+    font-size: 17px;
+    margin-bottom: 0px; 
+}
+
+.inputpass{
+    background-color:lightgray;
+    border-radius:6px;
+    border:0px;
+}   
+
+.boton-login:hover{
+    background-color:white;
+    color:black;
+}
+
+.boton-login{
+    background-color:blue;
+    font-size:15px;
+    border-radius:6px;
+    border:0px;
+    margin-top:6px;
+    color: white;
+}
+
+    .boton-login:hover {
+        background-color: white;
+        color: black;
+    }
+
+.btn {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;
+}

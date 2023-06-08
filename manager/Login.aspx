@@ -2,16 +2,21 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     
     <main>
+         <asp:Label ID="lblMensajeError" runat="server" Text=""></asp:Label>
+
         <div class="divflex">
         <h1>Titulo del login</h1>
             <p class="texto">Usuario</p>
-            <input class="inputpass" type="email" placeholder="mail@ejemplo.com" />
+            <asp:TextBox ID="txtUsuario" TextMode="Email" runat="server" Class="inputpass"></asp:TextBox>
+                    
            
             <p class="texto">Contraseña</p>
-            <input class="inputpass" type="password" placeholder="Contraseña"/>
+            <asp:TextBox ID="txtClave" TextMode="Password" runat="server"  Class="inputpass"></asp:TextBox>
             </div>
-            <button class="boton-login" type="submit">
-                Login
-            </button>
+
+         <div class="">
+                    <asp:Button ID="cmdLogin" class="boton-login" runat="server" Text="Ingresar"  OnClick="cmdLogin_Click"/>
+                </div>
+           
     </main>
 </asp:Content>

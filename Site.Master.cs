@@ -11,7 +11,15 @@ namespace ProyectoNoticiasNicolas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["USUARIO_ID"] is null)
+            {
+                lblBienvenida.Text = "Usuario sin autenticar";
 
+            }
+            else
+            {
+                lblBienvenida.Text = Session["NOMBRE_USUARIO"].ToString() + " (" + Session["PERFIL"] + ")";
+            }
         }
     }
 }

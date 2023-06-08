@@ -15,6 +15,7 @@ namespace ProyectoNoticiasNicolas
             if (!IsPostBack)
             {
                 CargarCategoriasNoticia();
+                CargarNoticias();
             }
             else
             {
@@ -54,7 +55,35 @@ namespace ProyectoNoticiasNicolas
             {
                 Response.Write(sRet);
             }
+        }
 
+            
+            void CargarNoticias()
+            {
+                string sRet = "";
+                DataTable dt = new DataTable();
+                sRet = Utilidades.datos.ObtenerNoticias(1, int.Parse(ddlCategorias.SelectedValue), ref dt);
+
+
+                if (sRet == "")
+                {
+                    gvNoticias.DataSource = dt;
+                    gvNoticias.DataBind();
+
+                    lblRegistros.Text = "Hay " + dt.Rows.Count.ToString() + " noticias para la categoría seleccionada";
+                }
+
+
+
+
+
+
+            }
+
+            protected void ddlCategorias_SelectedIndexChanged(object sender, EventArgs e)
+            {
+                CargarNoticias();
+            }
 
 
 
@@ -66,4 +95,3 @@ namespace ProyectoNoticiasNicolas
         }
 
     }
-}

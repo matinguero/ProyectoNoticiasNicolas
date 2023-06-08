@@ -11,34 +11,34 @@ namespace ProyectoNoticiasNicolas
 {
 
 
-    public partial class SiteMaster
+    public partial class UCNavegacion
     {
 
         /// <summary>
-        /// UCNavegacion control.
+        /// plcManager control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::ProyectoNoticiasNicolas.UCNavegacion UCNavegacion;
+        protected global::System.Web.UI.WebControls.PlaceHolder plcManager;
 
         /// <summary>
-        /// MainContent control.
+        /// plcUsuarios control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.PlaceHolder plcUsuarios;
 
         /// <summary>
-        /// lblBienvenida control.
+        /// lnkSalir control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBienvenida;
+        protected global::System.Web.UI.WebControls.LinkButton lnkSalir;
     }
 }

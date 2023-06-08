@@ -7,38 +7,47 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProyectoNoticiasNicolas
+namespace ProyectoNoticiasNicolas.manager
 {
 
 
-    public partial class SiteMaster
+    public partial class Noticias
     {
 
         /// <summary>
-        /// UCNavegacion control.
+        /// dlCategorias control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::ProyectoNoticiasNicolas.UCNavegacion UCNavegacion;
+        protected global::System.Web.UI.WebControls.DropDownList dlCategorias;
 
         /// <summary>
-        /// MainContent control.
+        /// lblRegistros control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.Label lblRegistros;
 
         /// <summary>
-        /// lblBienvenida control.
+        /// cmdNuevaNoticia control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBienvenida;
+        protected global::System.Web.UI.WebControls.Button cmdNuevaNoticia;
+
+        /// <summary>
+        /// gvNoticias control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvNoticias;
     }
 }

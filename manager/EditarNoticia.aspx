@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EditarNoticia.aspx.cs" Inherits="ProyectoNoticiasNicolas.manager.EditarNoticia" %>
+﻿ <%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EditarNoticia.aspx.cs" Inherits="ProyectoNoticiasNicolas.manager.EditarNoticia" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -21,6 +21,8 @@
   <div class="col-md-4"></div>
          
   <div class="col-md-8">
+
+      <asp:HiddenField ID="HiddenField1" runat="server" />
 
         <div class="form-group">
             <asp:TextBox ID="txtTitulo" class="form-control" placeholder="Título" runat="server"></asp:TextBox>
@@ -46,8 +48,20 @@
       <div class="form-group">
           Activo?
           <asp:CheckBox ID="chkActivo" runat="server" />
+
       
       </div>
+
+      <div class="form-group">
+          Subir Foto
+          <br />
+          <asp:Image ID="imgFoto" runat="server" />
+          <br />
+          <asp:FileUpload ID="fuFotoNoticia" runat="server" />
+          <asp:HiddenField ID="hNombreFoto" runat="server" />
+      
+      </div>
+
        <div class="form-group">
            Categoría
     <asp:DropDownList ID="ddlCategoria" cssClass="form-select" runat="server">

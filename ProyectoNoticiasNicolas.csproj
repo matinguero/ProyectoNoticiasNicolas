@@ -127,6 +127,7 @@
     <Content Include="DetalleNoticia.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="manager\ABMusuarios.aspx" />
     <Content Include="manager\EditarNoticia.aspx" />
     <Content Include="manager\Login.aspx" />
     <Content Include="manager\Default.aspx" />
@@ -228,6 +229,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="manager\ABMusuarios.aspx.cs">
+      <DependentUpon>ABMusuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manager\ABMusuarios.aspx.designer.cs">
+      <DependentUpon>ABMusuarios.aspx</DependentUpon>
+    </Compile>
     <Compile Include="manager\EditarNoticia.aspx.cs">
       <DependentUpon>EditarNoticia.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -290,6 +298,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Uploads\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

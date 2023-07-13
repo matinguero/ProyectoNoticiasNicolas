@@ -80,6 +80,7 @@ namespace ProyectoNoticiasNicolas.manager
             if (e.CommandName == "EDITAR")
             {
                 Utils.ShowAlertAjax(this.Page, "HICIERON CLICK EN EDITAR EN LA NOTICIA: " + e.CommandArgument.ToString(), "");
+               Response.Redirect("EditarNoticia?id=" + e.CommandArgument.ToString());
             }
 
             if (e.CommandName == "ELIMINAR")
@@ -109,9 +110,6 @@ namespace ProyectoNoticiasNicolas.manager
             Response.Redirect("EditarNoticia?id=0");
         }
 
-        protected void cmdEditarNoticia_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("EditarNoticia?id=0");
-        }
+       
     }
 }

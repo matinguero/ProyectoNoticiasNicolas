@@ -13,6 +13,7 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contacto</a></li>
                          <li class="nav-item"><a class="nav-link" runat="server" href="~/manager/Login">Login</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Noticias">Noticias</a></li>
+                         <li class="nav-item"><a class="nav-link" runat="server" href="~/manager/ABMusuarios">ABMusers</a></li>
 
 
                         <asp:PlaceHolder ID="plcManager" runat="server">

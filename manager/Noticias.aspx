@@ -47,7 +47,7 @@
                     
                     <asp:TemplateField HeaderText="Editar">
                         <ItemTemplate>
-                            <asp:Button ID="cmdEditarNoticia" runat="server" CssClass="btn btn-info" Text="Editar Noticia" CommandName="EDITAR" OnClick="cmdEditarNoticia_Click" CommandArgument='<%#Eval("id") %>' />
+                            <asp:Button ID="cmdEditarNoticia" runat="server" CssClass="btn btn-info" Text="Editar Noticia" CommandName="EDITAR" CommandArgument='<%#Eval("id") %>' />
                         </ItemTemplate>
                         
                     </asp:TemplateField>

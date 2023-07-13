@@ -44,7 +44,7 @@ namespace ProyectoNoticiasNicolas.manager
 
                         //GUARDO EN SESSION LOS DATOS QUE QUIERO USAR
                         Session["USUARIO_ID"] = dt.Rows[0]["id"].ToString();
-                        Session["NOMBRE_USUARIO"] = dt.Rows[0]["Apeliido"].ToString() + ", " + dt.Rows[0]["Nombre"].ToString();
+                        Session["NOMBRE_USUARIO"] = dt.Rows[0]["Apellido"].ToString() + ", " + dt.Rows[0]["Nombre"].ToString();
                         Session["PERFIL_ID"] = dt.Rows[0]["perfil_id"].ToString();
                         Session["PERFIL"] = dt.Rows[0]["perfil"].ToString();
 

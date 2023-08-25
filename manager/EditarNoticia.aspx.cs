@@ -15,7 +15,7 @@ namespace ProyectoNoticiasNicolas.manager
         String sFolderUploads = "uploads";
         protected void Page_Load(object sender, EventArgs e)
         {
-            ///TODO: HACER EL UPDATE
+            
             if (!Page.IsPostBack)
             {
 
@@ -74,7 +74,6 @@ namespace ProyectoNoticiasNicolas.manager
 
                         hNombreFoto.Value = dt.Rows[0]["imagen"].ToString();
 
-                        //TODO: TERMINAR IMAGEN
                     }
                     else
                     {

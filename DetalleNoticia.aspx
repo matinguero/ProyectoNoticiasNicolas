@@ -8,6 +8,8 @@
           <h1>   <asp:Label ID="lblcopete" runat="server" Text="Label"></asp:Label></h1>
          <h1>    <asp:Label ID="lblcategoria" runat="server" Text="Label"></asp:Label></h1>
             
+        <%--<div class="text-center">            <asp:HyperLink ID="volvernoticia" CssClass="btn btn-info" NavigateUrl="/Noticias" runat="server">Volver</asp:HyperLink>        </div>--%>
+       <a href="JavaScript:history.back()">Volver</a>
         
     </main>
 </asp:Content>

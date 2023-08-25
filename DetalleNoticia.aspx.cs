@@ -10,6 +10,7 @@ namespace ProyectoNoticiasNicolas
 {
     public partial class DetalleNoticia : System.Web.UI.Page
     {
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(Request.QueryString["id"]))

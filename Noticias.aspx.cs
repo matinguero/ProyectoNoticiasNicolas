@@ -67,10 +67,18 @@ namespace ProyectoNoticiasNicolas
 
                 if (sRet == "")
                 {
+
+                DataView dv = new DataView();
+                dv = dt.DefaultView;
+
+
+
                     gvNoticias.DataSource = dt;
                     gvNoticias.DataBind();
+                DataList1.DataSource = dt;
+                DataList1.DataBind();
 
-                    lblRegistros.Text = "Hay " + dt.Rows.Count.ToString() + " noticias para la categoría seleccionada";
+                lblRegistros.Text = "Hay " + dt.Rows.Count.ToString() + " noticias para la categoría seleccionada";
                 }
 
 
@@ -85,13 +93,9 @@ namespace ProyectoNoticiasNicolas
                 CargarNoticias();
             }
 
-
-
-
-
-
-
-
+        protected void gvNoticias_Sorting(object sender, GridViewSortEventArgs e)
+        {
         }
+    }
 
     }

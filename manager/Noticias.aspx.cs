@@ -59,7 +59,7 @@ namespace ProyectoNoticiasNicolas.manager
             {
                 gvNoticias.DataSource = dt;
                 gvNoticias.DataBind();
-
+                
                 lblRegistros.Text = "Hay " + dt.Rows.Count.ToString() + " noticias para la categoría seleccionada";
             }
 
@@ -85,7 +85,7 @@ namespace ProyectoNoticiasNicolas.manager
 
             if (e.CommandName == "ELIMINAR")
             {
-                ///TODO: Acá eliminamos noticias
+                
 
                 string sRetorno = "";
                 sRetorno = datos.EliminarNoticia(Convert.ToInt32(e.CommandArgument.ToString()));

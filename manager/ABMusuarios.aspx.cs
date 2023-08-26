@@ -11,7 +11,8 @@ namespace ProyectoNoticiasNicolas.manager
 {
     public partial class ABMusuarios : System.Web.UI.Page
     {
-        //TODO: CREAR REGISTRO USUARIO
+       
+
 
         protected void Page_Load(object sender, EventArgs e)
         {

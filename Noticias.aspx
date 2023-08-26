@@ -22,7 +22,7 @@
         <div class="row">
 
             <div class="table-responsive">
-                <asp:GridView ID="gvNoticias" CssClass="table table-striped table-hover table-bordered table-sm" runat="server" AutoGenerateColumns="False" EmptyDataText="No se encontraron registros" AllowSorting="true" OnSorting="gvNoticias_Sorting"  > 
+                <asp:GridView ID="gvNoticias" Visible="false" CssClass="table table-striped table-hover table-bordered table-sm" runat="server" AutoGenerateColumns="False" EmptyDataText="No se encontraron registros" AllowSorting="true" OnSorting="gvNoticias_Sorting"  > 
                 <Columns>
 
                      <asp:BoundField DataField="id" HeaderText="Id de Noticia" SortExpression="id" />
@@ -87,7 +87,7 @@
                             <asp:Label ID="lblcopete" runat="server" Text='<%# Eval("copete") %>'></asp:Label>
                         </p>
                       
-                           <asp:HyperLink Cssclass="btn btn-primary" ID="hlnkDetalle" NavigateUrl='<%#"DetalleNoticia?id=" + Eval("id") %>'  runat="server">Ver detalle</asp:HyperLink>
+                           <asp:HyperLink Cssclass="btn boton-Login" ID="hlnkDetalle" NavigateUrl='<%#"DetalleNoticia?id=" + Eval("id") %>'  runat="server">Ver detalle</asp:HyperLink>
                      </div>
                     </div>
                   

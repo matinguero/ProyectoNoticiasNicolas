@@ -125,6 +125,9 @@ namespace ProyectoNoticiasNicolas.manager
 
         }
 
-        //TODO: EDITAR USUARIO
+        protected void BtnNuevoUsuario_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ABMusuarios?id=0");
+        }
     }
 }

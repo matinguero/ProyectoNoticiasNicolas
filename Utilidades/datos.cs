@@ -319,7 +319,7 @@ namespace ProyectoNoticiasNicolas.Utilidades
             try
             {
                 MyConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringSQL"].ConnectionString);
-                MyCommand = new SqlCommand("spModificarUsuario", MyConnection);
+                MyCommand = new SqlCommand("spActualizarUsuario", MyConnection);
                 MyCommand.CommandType = CommandType.StoredProcedure;
 
                 //AGREGO EL PARAMETRO CON EL VALOR DEL PARAMETRO AL COMANDO
@@ -336,7 +336,7 @@ namespace ProyectoNoticiasNicolas.Utilidades
                 MyCommand.Parameters.AddWithValue("@id", iId);
 
 
-                ///TODO: parametro con el nombre de la foto en la llamada al sp
+                
                 //MyCommand.Parameters.AddWithValue("@foto", sFoto);
 
                 //ACCIONES A MANO
@@ -401,7 +401,7 @@ namespace ProyectoNoticiasNicolas.Utilidades
 
                 MyCommand.Parameters.AddWithValue("@perfil_id", iPerfil_id);
 
-                ///TODO: parametro con el nombre de la foto en la llamada al sp
+                
 
 
                 //ACCIONES A MANO

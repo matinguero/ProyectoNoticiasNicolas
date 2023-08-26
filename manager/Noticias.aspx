@@ -21,7 +21,7 @@
         </div>
 
         <div class="row col-md-2">
-            <asp:Button ID="cmdNuevaNoticia" CssClass="btn btn-info" OnClick="cmdNuevaNoticia_Click" runat="server" Text="Agregar Noticia" />
+            <asp:Button ID="cmdNuevaNoticia" CssClass="boton-login" OnClick="cmdNuevaNoticia_Click" runat="server" Text="Agregar Noticia" />
         </div>
         <br />
 
@@ -47,7 +47,7 @@
                     
                     <asp:TemplateField HeaderText="Editar">
                         <ItemTemplate>
-                            <asp:Button ID="cmdEditarNoticia" runat="server" CssClass="btn btn-info" Text="Editar Noticia" CommandName="EDITAR" CommandArgument='<%#Eval("id") %>' />
+                            <asp:Button ID="cmdEditarNoticia" runat="server" CssClass="boton-login" Text="Editar Noticia" CommandName="EDITAR" CommandArgument='<%#Eval("id") %>' />
                         </ItemTemplate>
                         
                     </asp:TemplateField>
@@ -55,7 +55,7 @@
 
                     <asp:TemplateField HeaderText="Eliminar">
                         <ItemTemplate>
-                            <asp:Button ID="cmdEliminarNoticia" runat="server" CssClass="btn btn-danger" Text="Eliminar Noticia" CommandName="ELIMINAR" CommandArgument='<%#Eval("id") %>' OnClientClick="return confirm('Está seguro que desea eliminar la noticia?');"  />
+                            <asp:Button ID="cmdEliminarNoticia" runat="server" CssClass="boton-eliminar" Text="Eliminar Noticia" CommandName="ELIMINAR" CommandArgument='<%#Eval("id") %>' OnClientClick="return confirm('Está seguro que desea eliminar la noticia?');"  />
                         </ItemTemplate>
                         
                     </asp:TemplateField>

@@ -4,8 +4,11 @@
     
     <div class="row col-md-12">
        <h2>USUARIOS</h2>
-            
         </div>
+          <div class="row col-md-2">
+        <asp:Button ID="BtnNuevoUsuario" OnClick="BtnNuevoUsuario_Click" runat="server" CssClass="boton-login" Text="Nuevo Usuario" />
+              </div>
+        
 
     <div class="row col-md-4">
         <asp:Label ID="lblRegistros" runat="server" Text=""></asp:Label>
@@ -28,7 +31,7 @@
                     
                     <asp:TemplateField HeaderText="Editar">
                         <ItemTemplate>
-                            <asp:Button ID="cmdEditarUsuario" runat="server" CssClass="btn btn-info" Text="Editar Usuario" CommandName="EDITAR" CommandArgument='<%#Eval("id") %>'  />
+                            <asp:Button ID="cmdEditarUsuario" runat="server" CssClass="boton-login" Text="Editar Usuario" CommandName="EDITAR" CommandArgument='<%#Eval("id") %>'  />
                         </ItemTemplate>
                         
                     </asp:TemplateField>
@@ -36,7 +39,7 @@
 
                     <asp:TemplateField HeaderText="Eliminar">
                         <ItemTemplate>
-                            <asp:Button ID="cmdEliminarUsuario" runat="server" CssClass="btn btn-danger" Text="Eliminar Usuario" CommandName="ELIMINAR" CommandArgument='<%#Eval("id") %>' OnClientClick="return confirm('Está seguro que desea eliminar el usuario?');"  />
+                            <asp:Button ID="cmdEliminarUsuario" runat="server" CssClass="boton-eliminar" Text="Eliminar Usuario" CommandName="ELIMINAR" CommandArgument='<%#Eval("id") %>' OnClientClick="return confirm('Está seguro que desea eliminar el usuario?');"  />
                         </ItemTemplate>
                         
                     </asp:TemplateField>

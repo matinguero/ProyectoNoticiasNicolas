@@ -9,11 +9,10 @@
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/About">Acerca de</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contacto</a></li>
-                         <li class="nav-item"><a class="nav-link" runat="server" href="~/manager/Login">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/manager/Login">Login</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Noticias">Noticias</a></li>
-                         <li class="nav-item"><a class="nav-link" runat="server" href="~/manager/ABMusuarios">ABMusers</a></li>
+                        
 
 
                         <asp:PlaceHolder ID="plcManager" runat="server">
